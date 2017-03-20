@@ -18,6 +18,34 @@ class PeopleModule extends Module
      * @var array
      */
     protected $sections = [
-        'example'
+        'people' => [
+            'buttons' => [
+                'new_person',
+                'assignments' =>[
+                    'enabled' => 'admin/people'
+                ],
+            ],
+        ],
+        'fields' => [
+            'buttons' => [
+                'new_field' => [
+                    'data-toggle' => 'modal',
+                    'data-target' => '#modal',
+                    'href' => 'admin/people/fields/choose',
+                ],
+            ],
+            'sections' => [
+                'assignments' => [
+                    'href'    => 'admin/people/fields/assignments/{request.route.parameters.stream}',
+                    'buttons' => [
+                        'assign_fields' => [
+                            'data-toggle' => 'modal',
+                            'data-target' => '#modal',
+                            'href' => 'admin/people/fields/assignments/{request.route.parameters.stream}/choose',
+                        ],
+                    ]
+                ]
+            ],
+        ],
     ];
 }

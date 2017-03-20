@@ -9,7 +9,16 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
 
     protected $commands = [];
 
-    protected $routes = [];
+    #TODO Move to resources/routes
+    protected $routes = [
+        'admin/people/fields'           => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@index',
+        'admin/people/fields/choose'    => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@choose',
+        'admin/people/fields/create'    => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@create',
+        'admin/people/fields/edit/{id}' => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@edit',
+        'admin/people/fields/assignments/{stream}' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@index',
+        'admin/people/fields/assignments/{stream}/choose' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@choose',
+        'admin/people/fields/assignments/{stream}/create' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@create',
+    ];
 
     protected $middleware = [];
 
@@ -21,7 +30,8 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
 
     protected $providers = [];
 
-    protected $singletons = [];
+    protected $singletons = [
+    ];
 
     protected $overrides = [];
 

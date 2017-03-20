@@ -1,0 +1,36 @@
+<?php
+
+use Anomaly\Streams\Platform\Database\Migration\Migration;
+
+class WirelabModulePeopleCreatePeopleStream extends Migration
+{
+
+    /**
+     * The stream definition.
+     *
+     * @var array
+     */
+    protected $stream = [
+        'slug' => 'people',
+        'title_column' => 'name',
+    ];
+
+    /**
+     * The stream assignments.
+     *
+     * @var array
+     */
+    protected $assignments = [
+        'name' => [
+            'required' => true,
+        ],
+        'slug' => [
+            'required' => true,
+        ],
+        'image' => [
+            'required' => true,
+        ],
+        'title',
+    ];
+
+}

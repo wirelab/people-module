@@ -3,5 +3,5 @@
 return [
     'title'       => 'People',
     'name'        => 'People Module',
-    'description' => ''
+    'description' => 'Manage people.'
 ];
