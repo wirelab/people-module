@@ -10,7 +10,7 @@ class PeopleModule extends Module
      *
      * @var string
      */
-    protected $icon = 'fa fa-puzzle-piece';
+    protected $icon = 'fa fa-users';
 
     /**
      * The module sections.
