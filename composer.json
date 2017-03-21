@@ -1,6 +1,26 @@
 {
     "name": "wirelab/people-module",
     "type": "streams-addon",
+    "description": "People module for PyroCMS 3.",
+    "keywords": [
+      "wirelab",
+      "people",
+      "pyrocms",
+      "pyrocms 3"
+    ],
+    "homepage": "http://wirelab.nl",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Wirelab",
+        "email": "algemeen@wirelab.nl",
+        "homepage": "http://www.wirelab.nl",
+        "role": "Owner"
+      }
+    ],
+    "support": {
+      "email": "algemeen@wirelab.nl"
+    },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
