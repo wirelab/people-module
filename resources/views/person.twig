@@ -1,0 +1,13 @@
+<div class="person">
+  <img class="person--image" src="{{person.image.make.url}}">
+  <p class="person--name">{{person.name}}</p>
+  <p class="person--title">{{person.title}}</p>
+
+  {% if person.hasField('email') %}
+    <p class="person--email">{{person.email.mailto|raw}}</p>
+  {% endif %}
+
+  {% if person.hasField('twitter') %}
+    <p class="person--twitter">{{person.twitter.link|raw}}</p>
+  {% endif %}
+</div>

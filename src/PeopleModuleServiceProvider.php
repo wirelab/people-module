@@ -26,7 +26,9 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
 
     protected $aliases = [];
 
-    protected $bindings = [];
+    protected $bindings = [
+      'Anomaly\Streams\Platform\Model\People\PeoplePeopleEntryModel' => 'Wirelab\PeopleModule\Person\PersonModel',
+    ];
 
     protected $providers = [];
 
