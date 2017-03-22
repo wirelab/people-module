@@ -15,6 +15,6 @@ class PersonPresenter extends EntryPresenter
 
   public function render()
   {
-    return $this->view->make('wirelab.module.people::person', ['person' => $this->getObject()])->render();
+    return $this->view->make('wirelab.module.people::person.view', ['person' => $this->getObject()])->render();
   }
 }

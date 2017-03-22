@@ -2,25 +2,25 @@
 
 return [
     'name' => [
-        'name' => 'Name',
+        'name'         => 'Name',
         'instructions' => [
             'people' => 'The full name of the person.'
         ]
     ],
     'image' => [
-        'name' => 'Image',
+        'name'         => 'Image',
         'instructions' => [
             'people' => 'The image for this person.',
         ]
     ],
     'title' => [
-        'name' => 'Title',
+        'name'         => 'Title',
         'instructions' => [
             'people' => 'This persons title.',
         ],
     ],
     'slug' => [
-        'name' => 'Slug',
+        'name'         => 'Slug',
         'instructions' => [
             'people' => 'The slug is used for finding this person later.'
         ],

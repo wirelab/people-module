@@ -2,16 +2,16 @@
 
 return [
   'fields' => [
-    'name' => 'Velden',
+    'name'   => 'Velden',
     'option' => [
       'manage' => 'Kan velden beheren.',
     ],
   ],
   'people' => [
-    'name' => 'Personen',
+    'name'   => 'Personen',
     'option' => [
-      'read' => 'Kan personen uitlezen?',
-      'write' => 'Kan personen aanmaken en bewerken?',
+      'read'   => 'Kan personen uitlezen?',
+      'write'  => 'Kan personen aanmaken en bewerken?',
       'delete' => 'Kan personen verwijderen?',
     ],
   ],

@@ -10,8 +10,8 @@ return [
   'people' => [
     'name' => 'People',
     'option' => [
-      'read' => 'Can read people?',
-      'write' => 'Can create and edit people?',
+      'read'   => 'Can read people?',
+      'write'  => 'Can create and edit people?',
       'delete' => 'Can delete people?',
     ],
   ],

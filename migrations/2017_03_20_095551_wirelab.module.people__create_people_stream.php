@@ -11,8 +11,9 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'people',
+        'slug'         => 'people',
         'title_column' => 'name',
+        'translatable' => true,
     ];
 
     /**
@@ -30,7 +31,9 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
         'image' => [
             'required' => true,
         ],
-        'title',
+        'title' => [
+            'translatable' => true,
+        ],
     ];
 
 }
