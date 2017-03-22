@@ -25,9 +25,6 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
         'name' => [
             'required' => true,
         ],
-        'slug' => [
-            'required' => true,
-        ],
         'image' => [
             'required' => true,
         ],
