@@ -1,6 +1,8 @@
 <?php namespace Wirelab\PeopleModule;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Wirelab\PeopleModule\Person\Contract\PersonRepositoryInterface;
+use Wirelab\PeopleModule\Person\PersonRepository;
 
 class PeopleModuleServiceProvider extends AddonServiceProvider
 {
@@ -23,4 +25,7 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
       'Anomaly\Streams\Platform\Model\People\PeoplePeopleEntryModel' => 'Wirelab\PeopleModule\Person\PersonModel',
     ];
 
+    protected $singletons = [
+        PersonRepositoryInterface::class => PersonRepository::class,
+    ];
 }
