@@ -19,6 +19,7 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
         'admin/people/fields/assignments/{stream}'        => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@index',
         'admin/people/fields/assignments/{stream}/choose' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@choose',
         'admin/people/fields/assignments/{stream}/create' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@create',
+        'admin/people/fields/assignments/{stream}/edit/{id}' => 'Wirelab\PeopleModule\Http\Controller\Admin\AssignmentsController@edit',
     ];
 
     protected $bindings = [
