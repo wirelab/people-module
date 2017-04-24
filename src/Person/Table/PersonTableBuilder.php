@@ -5,6 +5,11 @@ use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 class PersonTableBuilder extends TableBuilder
 {
 
+    protected $columns = [
+        'name',
+        'title'
+    ];
+
     /**
      * The table buttons.
      *
