@@ -22,4 +22,15 @@ class PersonRepository extends EntryRepository implements PersonRepositoryInterf
     {
         $this->model = $model;
     }
+
+    /**
+     * Find a vacancy by it's slug.
+     *
+     * @param $slug
+     * @return TypeInterface
+     */
+    public function findBySlug($slug)
+    {
+        return $this->model->where('slug', $slug)->first();
+    }
 }

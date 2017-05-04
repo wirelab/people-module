@@ -23,13 +23,17 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
      * @var array
      */
     protected $assignments = [
-        'name' => [
-            'required' => true,
-        ],
         'image' => [
             'required' => true,
         ],
+        'name' => [
+            'required' => true,
+        ],
+        'slug' => [
+            'required' => true,
+        ],
         'title' => [
+            'required' => true,
             'translatable' => true,
         ],
     ];

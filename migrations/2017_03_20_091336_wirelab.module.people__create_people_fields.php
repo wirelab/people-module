@@ -12,6 +12,13 @@ class WirelabModulePeopleCreatePeopleFields extends Migration
      */
     protected $fields = [
         'name'  => 'anomaly.field_type.text',
+        'slug'  => [
+            'type' => 'anomaly.field_type.slug',
+            'config' => [
+                'slugify' => 'name',
+                'type' => '-'
+            ]
+        ],
         'title' => 'anomaly.field_type.text',
         'image' => [
             'type'   => 'anomaly.field_type.file',

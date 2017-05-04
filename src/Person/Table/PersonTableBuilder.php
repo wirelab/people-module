@@ -17,6 +17,9 @@ class PersonTableBuilder extends TableBuilder
      * @var array|string
      */
     protected $buttons = [
+        'view' => [
+            'href' => 'people/{entry.slug}'
+        ],
         'edit'
     ];
 

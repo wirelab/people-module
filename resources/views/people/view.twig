@@ -1,0 +1,6 @@
+{% extends 'theme::layouts/default' %}
+
+{% block content %}
+	<h1> {{ person.name }} <small> {{ person.title }} </small></h1>
+	<img src="{{ person.image.viewPath }}">
+{% endblock %}
