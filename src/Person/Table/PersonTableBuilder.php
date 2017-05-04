@@ -6,7 +6,7 @@ class PersonTableBuilder extends TableBuilder
 {
 
     protected $columns = [
-        'entry.image.preview'
+        'entry.image.preview',
         'name',
         'title'
     ];
@@ -31,6 +31,6 @@ class PersonTableBuilder extends TableBuilder
 
     protected $options = [
         'sortable'
-    ]
+    ];
 
 }
