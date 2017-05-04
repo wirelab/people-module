@@ -14,6 +14,7 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
         'slug'         => 'people',
         'title_column' => 'name',
         'translatable' => true,
+        'sortable'     => true
     ];
 
     /**

@@ -22,7 +22,8 @@ class PeopleModule extends Module
             'buttons' => [
                 'new_person',
                 'assignments' =>[
-                    'enabled' => 'admin/people'
+                    'enabled' => 'admin/people',
+                    'permission' => 'wirelab.module.people::fields.*',
                 ],
             ],
         ],

@@ -6,6 +6,7 @@ class PersonTableBuilder extends TableBuilder
 {
 
     protected $columns = [
+        'entry.image.preview'
         'name',
         'title'
     ];
@@ -27,5 +28,9 @@ class PersonTableBuilder extends TableBuilder
     protected $actions = [
         'delete'
     ];
+
+    protected $options = [
+        'sortable'
+    ]
 
 }
