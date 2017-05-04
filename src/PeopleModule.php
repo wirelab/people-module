@@ -37,6 +37,7 @@ class PeopleModule extends Module
             ],
             'sections' => [
                 'assignments' => [
+                    'hidden'  => true,
                     'href'    => 'admin/people/fields/assignments/{request.route.parameters.stream}',
                     'buttons' => [
                         'assign_fields' => [
