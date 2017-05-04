@@ -11,7 +11,7 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
         'admin/people' => 'Wirelab\PeopleModule\Http\Controller\Admin\PeopleController@index',
         'admin/people/create' => 'Wirelab\PeopleModule\Http\Controller\Admin\PeopleController@create',
         'admin/people/edit/{id}' => 'Wirelab\PeopleModule\Http\Controller\Admin\PeopleController@edit',
-        'admin/people/assignments' => 'Wirelab\PeopleModule\Http\Controller\Admin\PeoplecController@assignments',
+        'admin/people/assignments' => 'Wirelab\PeopleModule\Http\Controller\Admin\PeopleController@assignments',
         'admin/people/fields' => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@index',
         'admin/people/fields/choose' => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@choose',
         'admin/people/fields/create' => 'Wirelab\PeopleModule\Http\Controller\Admin\FieldsController@create',
