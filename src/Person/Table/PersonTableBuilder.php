@@ -18,7 +18,8 @@ class PersonTableBuilder extends TableBuilder
      */
     protected $buttons = [
         'view' => [
-            'href' => 'people/{entry.slug}'
+            'href' => 'people/{entry.slug}',
+            'permission' => 'wirelab.module.people::people.view',
         ],
         'edit'
     ];

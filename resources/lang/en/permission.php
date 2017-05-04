@@ -13,6 +13,7 @@ return [
       'read'   => 'Can read people?',
       'write'  => 'Can create and edit people?',
       'delete' => 'Can delete people?',
+      'view'   => 'Can view a person?'
     ],
   ],
 ];
