@@ -23,6 +23,6 @@ class PeopleController extends PublicController
         $this->template->set('meta_title', $person->name);
         $this->template->set('meta_description', $person->description);
 
-        return $this->view->make('module::people/view', compact('person'));
+        return $this->view->make('wirelab.module.people::people/view', compact('person'));
     }
 }
