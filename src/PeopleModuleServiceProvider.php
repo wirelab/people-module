@@ -2,7 +2,9 @@
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Wirelab\PeopleModule\Person\Contract\PersonRepositoryInterface;
+use Wirelab\PeopleModule\Category\Contract\CategoryRepositoryInterface;
 use Wirelab\PeopleModule\Person\PersonRepository;
+use Wirelab\PeopleModule\Category\CategoryRepository;
 
 class PeopleModuleServiceProvider extends AddonServiceProvider
 {
@@ -29,6 +31,7 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
 
     protected $singletons = [
         PersonRepositoryInterface::class => PersonRepository::class,
+        CategoryRepositoryInterface::class => CategoryRepository::class,
     ];
 
     protected $listeners = [

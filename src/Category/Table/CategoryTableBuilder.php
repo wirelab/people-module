@@ -24,7 +24,9 @@ class CategoryTableBuilder extends TableBuilder
      *
      * @var array|string
      */
-    protected $columns = [];
+    protected $columns = [
+        'title',
+    ];
 
     /**
      * The table buttons.

@@ -22,4 +22,9 @@ class CategoryRepository extends EntryRepository implements CategoryRepositoryIn
     {
         $this->model = $model;
     }
+
+    public function findBySlug($slug)
+    {
+        $this->model->where('slug', '=', $slug);
+    }
 }
