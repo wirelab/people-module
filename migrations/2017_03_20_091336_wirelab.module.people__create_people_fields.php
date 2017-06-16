@@ -1,6 +1,7 @@
 <?php
 
 use Anomaly\Streams\Platform\Database\Migration\Migration;
+use Wirelab\PeopleModule\Category\CategoryModel;
 
 class WirelabModulePeopleCreatePeopleFields extends Migration
 {
@@ -26,6 +27,12 @@ class WirelabModulePeopleCreatePeopleFields extends Migration
                 'folders' => [
                     'images',
                 ]
+            ],
+        ],
+        'category' => [
+            'type' => 'anomaly.field_type.relationship',
+            'config' => [
+                'related' => CategoryModel::class,
             ],
         ],
     ];

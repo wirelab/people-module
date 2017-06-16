@@ -30,4 +30,10 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
     protected $singletons = [
         PersonRepositoryInterface::class => PersonRepository::class,
     ];
+
+    protected $listeners = [
+        'Anomaly\Streams\Platform\Addon\Module\Event\ModuleWasUninstalled' => [
+            'Wirelab\PeopleModule\Listener\CleanupFields'
+        ],
+    ];
 }

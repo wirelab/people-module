@@ -27,6 +27,11 @@ class PeopleModule extends Module
                 ],
             ],
         ],
+        'categories' => [
+            'buttons' => [
+                'new_category',
+            ],
+        ],
         'fields' => [
             'buttons' => [
                 'new_field' => [
