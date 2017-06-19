@@ -27,6 +27,7 @@ class PeopleModuleServiceProvider extends AddonServiceProvider
 
     protected $bindings = [
       'Anomaly\Streams\Platform\Model\People\PeoplePeopleEntryModel' => 'Wirelab\PeopleModule\Person\PersonModel',
+      'Anomaly\Streams\Platform\Model\Category\PeopleCategoriesEntryModel' => 'Wirelab\PeopleModule\Category\CategoryModel',
     ];
 
     protected $singletons = [
