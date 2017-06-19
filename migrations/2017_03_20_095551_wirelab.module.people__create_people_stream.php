@@ -36,7 +36,9 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
             'required' => true,
             'translatable' => true,
         ],
-        'category',
+        'category' => [
+            'required' => true,
+        ],
     ];
 
 }

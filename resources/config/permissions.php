@@ -10,4 +10,9 @@ return [
   'fields' => [
     'manage',
   ],
+  'categories' => [
+      'read',
+      'write',
+      'delete',
+  ],
 ];

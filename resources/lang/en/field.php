@@ -25,4 +25,7 @@ return [
             'people' => 'The slug is used for finding this person later.'
         ],
     ],
+    'category' => [
+        'name' => 'Category',
+    ],
 ];

@@ -7,5 +7,6 @@ return [
     'section' => [
         'people' => 'People',
         'fields' => 'Fields',
+        'categories' => 'Categories',
     ],
 ];

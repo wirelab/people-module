@@ -8,7 +8,8 @@ class PersonTableBuilder extends TableBuilder
     protected $columns = [
         'entry.image.preview',
         'name',
-        'title'
+        'title',
+        'category',
     ];
 
     /**

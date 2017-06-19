@@ -11,7 +11,8 @@ class WirelabModulePeopleCreateCategoriesStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'categories'
+        'slug' => 'categories',
+        'title_column' => 'title',
     ];
 
     /**
