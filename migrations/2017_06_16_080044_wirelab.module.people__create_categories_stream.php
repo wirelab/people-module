@@ -13,6 +13,7 @@ class WirelabModulePeopleCreateCategoriesStream extends Migration
     protected $stream = [
         'slug' => 'categories',
         'title_column' => 'title',
+        'translatable' => true,
     ];
 
     /**
