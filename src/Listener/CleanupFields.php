@@ -7,6 +7,9 @@ class CleanupFields
 {
     public function handle(ModuleWasUninstalled $event)
     {
+        if($event->getModule()->getSlug() != 'people')
+            return;
+
         $fields = app(FieldRepositoryInterface::class);
         $oldFields = $fields->findAllByNamespace('people');
         foreach($oldFields as $field) {
