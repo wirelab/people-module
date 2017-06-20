@@ -25,6 +25,6 @@ class CategoryRepository extends EntryRepository implements CategoryRepositoryIn
 
     public function findBySlug($slug)
     {
-        $this->model->where('slug', '=', $slug);
+        return $this->model->where('slug', '=', $slug)->get()->first();
     }
 }
