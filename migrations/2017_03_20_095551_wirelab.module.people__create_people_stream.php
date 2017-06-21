@@ -31,6 +31,7 @@ class WirelabModulePeopleCreatePeopleStream extends Migration
         ],
         'slug' => [
             'required' => true,
+            'unique' => true
         ],
         'title' => [
             'required' => true,
